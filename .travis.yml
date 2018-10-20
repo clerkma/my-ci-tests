@@ -1,8 +1,5 @@
 language: rust
 
-git:
-  depth: 10
-
 matrix:
   include:
     - os: windows
