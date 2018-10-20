@@ -3,4 +3,4 @@ language: rust
 matrix:
   include:
     - os: windows
-      script: "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 && cl test.c && test.exe
+      script: cmd "C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64 && cl test.c && test.exe
