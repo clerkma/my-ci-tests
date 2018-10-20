@@ -1,0 +1,11 @@
+language: c
+
+git:
+  depth: 10
+
+matrix:
+  include:
+    - os: windows
+      script: '"C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\vcvarsall.bat" amd64'
+      script: cl test.c
+      script: test.exe
